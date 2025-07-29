@@ -1,0 +1,12 @@
+.activeee {
+  color: red;
+}
+
+.post {
+  width:200px;
+  height: auto;
+  border:1px solid red;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
