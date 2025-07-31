@@ -7,7 +7,7 @@ export function Header() {
     return (
         <div>
             <NavLink className={({isActive}) => isActive ? 'activeee' : '' } to='/Post'>post</NavLink>
-            <NavLink className={({isActive}) => isActive ? 'activeee' : '' } to='/about'>photos</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'activeee' : '' } to='/about'>about</NavLink>
             <button onClick={ () => navigate(-1)}>back</button>
         </div>
     )

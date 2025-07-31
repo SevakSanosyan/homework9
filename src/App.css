@@ -3,10 +3,33 @@
 }
 
 .post {
-  width:200px;
-  height: auto;
-  border:1px solid red;
+  width: 300px;
+  min-height: 180px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: inline-block;
   vertical-align: top;
-  margin: 10px;
+  margin: 15px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post h1 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post h4 {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
 }

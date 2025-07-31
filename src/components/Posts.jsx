@@ -1,14 +1,17 @@
-import { Posts } from "./database/posts"
+
 import '../app.css'
-export function Post() {
+import { Element } from './Element'
+export function Post({Posts}) {
     return (
       <div>
-        {Posts.map((post) => (
-          <div key={post.id} className="post">
-            <h1>{post.title}</h1>
-            <h4>{post.body}</h4>
-          </div>
-        ))}
+        {
+        
+        Posts.map((post) => (
+          <Element key={post.id} post={post} >
+
+          </Element>
+        ))
+      }
       </div>
     )
   }
